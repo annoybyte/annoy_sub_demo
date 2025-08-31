@@ -3,10 +3,26 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Video Site</title>
+<title>HybridVLA: Hardware, Data Collection and Demos</title>
 </head>
 <body>
 <style>
+	.teaser-img {
+		display: block;
+		margin: 40px auto 20px auto;
+		max-width: 900px;
+		width: 100%;
+		border-radius: 8px;
+		box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+	}
+	.collect-video {
+		display: block;
+		margin: 40px auto 20px auto;
+		max-width: 300px;
+		width: 30%;
+		border-radius: 8px;
+		box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+	}
 	.video-grid {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -29,16 +45,29 @@
 		margin-bottom: 20px;
 		font-weight: bold;
 	}
-	.teaser-img {
-		display: block;
-		margin: 40px auto 20px auto;
-		max-width: 900px;
-		width: 100%;
-		border-radius: 8px;
-		box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+	.subsection-title {
+		text-align: center;
+		font-size: 1.1em;
+		margin-top: 20px;
+		margin-bottom: 10px;
+		font-weight: bold;
 	}
 </style>
-<div class="section-title">DexVLA</div>
+
+<div class="section-title">🛠️ Hardware</div>
+<img class="teaser-img" src="teaser.jpg" alt="teaser image">
+
+<div class="section-title">🖥️ Data Collection</div>
+<video class="collect-video" controls>
+<!-- <video controls autoplay> -->
+<!-- <video controls> -->
+	<source src="collect.mp4" type="video/mp4">
+	Your browser does not support the video tag
+</video>
+
+<div class="section-title">🎬 Demos</div>
+
+<div class="subsection-title">HybridVLA (DexVLA)</div>
 <div class="video-grid">
 	<video controls>
 		<source src="demos/dexvla/task1.mp4" type="video/mp4">
@@ -58,8 +87,7 @@
 	</video>
 </div>
 
-<!-- <div class="section-title">&pi;<sub>0</sub> = 3.14</div> -->
-<div class="section-title">&pi;<sub>0</sub></div>
+<div class="subsection-title">HybridVLA (&pi;<sub>0</sub>)</div>
 <div class="video-grid">
 	<video controls>
 		<source src="demos/pi/task1.mp4" type="video/mp4">
@@ -78,8 +106,5 @@
 		Your browser does not support the video tag
 	</video>
 </div>
-
-<div class="section-title">Hardware System</div>
-<img class="teaser-img" src="teaser.jpg" alt="teaser image">
 </body>
 </html>
